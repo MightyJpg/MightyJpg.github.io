@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closePlayerBtn = document.getElementById('close-player-btn');
 
     // --- GANTI URL INI dengan URL Raw JSON Anda di GitHub ---
-    const jsonUrl = 'https://raw.githubusercontent.com/MightyJpg/database/refs/heads/main/database.json';
+    const jsonUrl = 'http://mightyjpg.fwh.is/database.json';
     // ----------------------------------------------------------
 
     let moviesData = []; // Untuk menyimpan data film setelah diambil
