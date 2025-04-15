@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming Film Sederhana</title>
+    <title>Streaming Film - Pencarian & Filter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,6 +12,13 @@
     </header>
 
     <main>
+        <div class="controls">
+            <input type="search" id="search-input" placeholder="Cari judul atau tag...">
+            <select id="genre-filter">
+                <option value="all">Semua Genre</option>
+                </select>
+        </div>
+
         <div id="video-player-container" class="video-player-container" style="display: none;">
             <h2 id="video-title">Judul Film</h2>
             <video id="video-player" controls width="100%"></video>
@@ -21,6 +28,9 @@
         <div id="movie-list" class="movie-list">
             <p>Memuat daftar film...</p>
         </div>
+
+        <div id="pagination-controls" class="pagination">
+            </div>
     </main>
 
     <footer>
