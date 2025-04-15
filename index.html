@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apa</title>
+    <title>Streaming Film Sederhana</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Hitam</p>
+    <header>
+        <h1>Galeri Film</h1>
+    </header>
+
+    <main>
+        <div id="video-player-container" class="video-player-container" style="display: none;">
+            <h2 id="video-title">Judul Film</h2>
+            <video id="video-player" controls width="100%"></video>
+            <button id="close-player-btn">Tutup Player</button>
+        </div>
+
+        <div id="movie-list" class="movie-list">
+            <p>Memuat daftar film...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Website Streaming Film</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
