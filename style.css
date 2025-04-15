@@ -110,3 +110,75 @@ footer {
     text-align: center;
     color: #777;
 }
+
+
+.controls {
+    display: flex;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.controls input[type="search"],
+.controls select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    flex-grow: 1; /* Agar elemen mengisi ruang yang tersedia */
+}
+
+.controls input[type="search"] {
+    min-width: 200px; /* Lebar minimum untuk input search */
+}
+
+.controls select {
+    min-width: 150px; /* Lebar minimum untuk dropdown genre */
+    cursor: pointer;
+}
+
+/* Styling untuk Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* ... (CSS lainnya dari sebelumnya) ... */
+
+/* Sedikit penyesuaian pada movie-item jika diperlukan */
+.movie-item .genre,
+.movie-item .tags {
+    font-size: 0.75rem; /* Kecilkan sedikit agar muat */
+    margin: 2px 5px 5px 5px;
+}
