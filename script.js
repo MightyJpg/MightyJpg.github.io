@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closePlayerBtn = document.getElementById('close-player-btn');
 
     // --- GANTI URL INI dengan URL Raw JSON Anda di GitHub ---
-    const jsonUrl = 'https://api.allorigins.win/raw?url=https://filter.mytopup.my.id/database.json';
+    const jsonUrl = 'https://filter.mytopup.my.id/database.json';
     // ----------------------------------------------------------
 
     let moviesData = []; // Untuk menyimpan data film setelah diambil
