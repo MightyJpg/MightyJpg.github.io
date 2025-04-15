@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Jarak antar item */
+}
+
+.movie-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Agar gambar tidak keluar dari border */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.movie-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item img {
+    max-width: 100%;
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Menghilangkan spasi bawah default pada gambar */
+}
+
+.movie-item .title {
+    font-weight: bold;
+    margin: 10px 5px 5px 5px;
+    font-size: 0.9rem;
+}
+
+.movie-item .genre,
+.movie-item .tags {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 0 5px 5px 5px;
+    word-wrap: break-word; /* Agar tag panjang tidak overflow */
+}
+
+.video-player-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Pusatkan tombol tutup */
+}
+
+#video-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left; /* Judul rata kiri */
+}
+
+#video-player {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#close-player-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+#close-player-btn:hover {
+    background-color: #c82333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #eee;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Styling untuk pesan loading */
+#movie-list p {
+    grid-column: 1 / -1; /* Span full width */
+    text-align: center;
+    color: #777;
+}
